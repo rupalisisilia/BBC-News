@@ -1,0 +1,24 @@
+
+*{margin: 0; padding: 0;}
+body{font-family: 'SolaimanLipi', sans-serif, "Poppins", sans-serif;}
+img{width: 100%;}
+a{text-decoration: none; color: #000;}
+ul{list-style-type: none;}
+a:hover{color:black}
+.container{
+	width: 1140px;
+	margin: 0 auto;
+}
+.navbar{
+	width: 100%;
+	overflow: hidden;
+	margin-top: 10px;
+}
+.navbar .logo{
+	width: 20%;
+	float: left;
+}
+.navbar .nav{
+	width: 80%;
+	float: right;
+}
