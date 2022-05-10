@@ -5,20 +5,19 @@ img{width: 100%;}
 a{text-decoration: none; color: #000;}
 ul{list-style-type: none;}
 a:hover{color:black}
+
+.navbar{
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
 .container{
-	width: 1140px;
+	background-color: #000;
+	width: 80rem !important;
+	max-width: 80rem !important;
 	margin: 0 auto;
 }
-.navbar{
-	width: 100%;
-	overflow: hidden;
-	margin-top: 10px;
-}
-.navbar .logo{
-	width: 20%;
-	float: left;
-}
-.navbar .nav{
-	width: 80%;
-	float: right;
+li.nav-item {
+	color: #fff;
+    padding: 0 15px;
+    border-right: 1px solid gray;
 }
