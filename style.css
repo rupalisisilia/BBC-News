@@ -219,8 +219,9 @@ li.nav-item {
 	overflow: hidden;
 	
 }
-.news-section{
-	height: 500px;
+.news-section .card .text{
+    border: none !important;
+	
 	
 }
 .news-section h3{
@@ -244,21 +245,25 @@ li.nav-item {
 	margin-top: 12px;
 }
 .reel-section{
-    background-color: red;
+    background:url(images/reel-back.jpg);
 }
+
 .reel-section .text h1{
-    padding-top: 30px ;
+    color: #fff;
+    padding-top: 10px ;
 	font-size: 40px;
 	text-align: left;
 	float: left;
 	overflow: hidden;
 }
 .reel-section .text h4{
+    color: #fff;
     text-align: end ;
-	padding-top: 30px;
+	padding-top: 10px;
 	overflow: hidden;
 }
 .reel-section .text h5{
+    color: #fff;
     text-align: left !important;
     padding-top: 5px;
 }
