@@ -219,9 +219,6 @@ li.nav-item {
 	overflow: hidden;
 	
 }
-.header-1 .text h2{
-	
-}
 .news-section{
 	height: 500px;
 	
@@ -245,4 +242,26 @@ li.nav-item {
   }
 .sec-line{
 	margin-top: 12px;
+}
+.reel-section{
+    background-color: red;
+}
+.reel-section .text h1{
+    padding-top: 30px ;
+	font-size: 40px;
+	text-align: left;
+	float: left;
+	overflow: hidden;
+}
+.reel-section .text h4{
+    text-align: end ;
+	padding-top: 30px;
+	overflow: hidden;
+}
+.reel-section .text h5{
+    text-align: left !important;
+    padding-top: 5px;
+}
+.Asia News .text h4{
+    padding-top: 40px !important;
 }
