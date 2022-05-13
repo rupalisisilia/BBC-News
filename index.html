@@ -1,420 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>BBC-News</title>
 	<!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 	<nav class="navbar navbar-expand-md navbar-light bg-light">
 		<div class="container">
-			
-				<ul class="navbar-nav">
-					<li class="nav-item nav-logo"><a class="nav-link" href="">
+
+			<ul class="navbar-nav">
+				<li class="nav-item nav-logo"><a class="nav-link" href="">
 						<div class="bbc-logo">
 
-							<svg xmlns="http://www.w3.org/2000/svg" width="84" height="24"><path d="M84 0v24H60V0h24ZM54 0v24H30V0h24ZM24 0v24H0V0h24Zm49.102 5.106c-1.08 0-2.055.16-2.925.481a6.294 6.294 0 0 0-2.239 1.388 6.067 6.067 0 0 0-1.43 2.175c-.33.845-.495 1.792-.495 2.84 0 1.074.16 2.04.477 2.897.317.858.775 1.582 1.372 2.175.597.592 1.327 1.045 2.191 1.36.864.314 1.836.472 2.916.472.812 0 1.588-.09 2.324-.269a7.832 7.832 0 0 0 1.944-.73v-2.573a7.234 7.234 0 0 1-3.868 1.092c-.915 0-1.693-.173-2.334-.518a3.45 3.45 0 0 1-1.468-1.509c-.336-.66-.505-1.458-.505-2.396s.175-1.734.524-2.388a3.55 3.55 0 0 1 1.506-1.499c.654-.345 1.445-.518 2.372-.518.673 0 1.315.09 1.925.268.61.18 1.175.442 1.696.787V6.013a7.892 7.892 0 0 0-1.858-.675 9.418 9.418 0 0 0-2.125-.232Zm-31.286.144H36.75v13.5h5.379c1.064 0 1.976-.157 2.735-.472.758-.315 1.343-.762 1.753-1.34.41-.58.615-1.272.615-2.078 0-.818-.211-1.513-.634-2.086-.422-.573-1.03-.991-1.826-1.256.575-.276 1.01-.65 1.303-1.123.294-.472.44-1.029.44-1.67 0-1.121-.41-1.98-1.23-2.578-.82-.598-1.976-.897-3.469-.897Zm-30 0H6.75v13.5h5.379c1.064 0 1.976-.157 2.735-.472.758-.315 1.343-.762 1.753-1.34.41-.58.615-1.272.615-2.078 0-.818-.211-1.513-.634-2.086-.422-.573-1.03-.991-1.826-1.256.575-.276 1.01-.65 1.303-1.123.294-.472.44-1.029.44-1.67 0-1.121-.41-1.98-1.23-2.578-.82-.598-1.976-.897-3.469-.897Zm30.092 7.666c1.677 0 2.515.617 2.515 1.85 0 .58-.22 1.023-.66 1.331-.441.309-1.072.463-1.891.463h-2.387v-3.644h2.423Zm-30 0c1.677 0 2.515.617 2.515 1.85 0 .58-.22 1.023-.66 1.331-.441.309-1.072.463-1.891.463H9.485v-3.644h2.423ZM41.56 7.44c1.457 0 2.185.535 2.185 1.605 0 .554-.187.985-.56 1.293-.373.309-.915.463-1.625.463h-2.074v-3.36h2.074Zm-30 0c1.457 0 2.185.535 2.185 1.605 0 .554-.187.985-.56 1.293-.373.309-.915.463-1.625.463H9.485v-3.36h2.074Z" fill="#FFF" fill-rule="nonzero"/></svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="84" height="24">
+								<path
+									d="M84 0v24H60V0h24ZM54 0v24H30V0h24ZM24 0v24H0V0h24Zm49.102 5.106c-1.08 0-2.055.16-2.925.481a6.294 6.294 0 0 0-2.239 1.388 6.067 6.067 0 0 0-1.43 2.175c-.33.845-.495 1.792-.495 2.84 0 1.074.16 2.04.477 2.897.317.858.775 1.582 1.372 2.175.597.592 1.327 1.045 2.191 1.36.864.314 1.836.472 2.916.472.812 0 1.588-.09 2.324-.269a7.832 7.832 0 0 0 1.944-.73v-2.573a7.234 7.234 0 0 1-3.868 1.092c-.915 0-1.693-.173-2.334-.518a3.45 3.45 0 0 1-1.468-1.509c-.336-.66-.505-1.458-.505-2.396s.175-1.734.524-2.388a3.55 3.55 0 0 1 1.506-1.499c.654-.345 1.445-.518 2.372-.518.673 0 1.315.09 1.925.268.61.18 1.175.442 1.696.787V6.013a7.892 7.892 0 0 0-1.858-.675 9.418 9.418 0 0 0-2.125-.232Zm-31.286.144H36.75v13.5h5.379c1.064 0 1.976-.157 2.735-.472.758-.315 1.343-.762 1.753-1.34.41-.58.615-1.272.615-2.078 0-.818-.211-1.513-.634-2.086-.422-.573-1.03-.991-1.826-1.256.575-.276 1.01-.65 1.303-1.123.294-.472.44-1.029.44-1.67 0-1.121-.41-1.98-1.23-2.578-.82-.598-1.976-.897-3.469-.897Zm-30 0H6.75v13.5h5.379c1.064 0 1.976-.157 2.735-.472.758-.315 1.343-.762 1.753-1.34.41-.58.615-1.272.615-2.078 0-.818-.211-1.513-.634-2.086-.422-.573-1.03-.991-1.826-1.256.575-.276 1.01-.65 1.303-1.123.294-.472.44-1.029.44-1.67 0-1.121-.41-1.98-1.23-2.578-.82-.598-1.976-.897-3.469-.897Zm30.092 7.666c1.677 0 2.515.617 2.515 1.85 0 .58-.22 1.023-.66 1.331-.441.309-1.072.463-1.891.463h-2.387v-3.644h2.423Zm-30 0c1.677 0 2.515.617 2.515 1.85 0 .58-.22 1.023-.66 1.331-.441.309-1.072.463-1.891.463H9.485v-3.644h2.423ZM41.56 7.44c1.457 0 2.185.535 2.185 1.605 0 .554-.187.985-.56 1.293-.373.309-.915.463-1.625.463h-2.074v-3.36h2.074Zm-30 0c1.457 0 2.185.535 2.185 1.605 0 .554-.187.985-.56 1.293-.373.309-.915.463-1.625.463H9.485v-3.36h2.074Z"
+									fill="#FFF" fill-rule="nonzero" />
+							</svg>
 
-<!-- <span>
+							<!-- <span>
 	
 							<svg viewBox="0 0 112 32" width="4.5625rem" height="1.3125rem"><path d="M111.99999,4.44444577e-05 L111.99999,32.0000444 L79.9999905,32.0000444 L79.9999905,4.44444577e-05 L111.99999,4.44444577e-05 Z M72.0000119,-3.55271368e-15 L72.0000119,32 L40.0000119,32 L40.0000119,-3.55271368e-15 L72.0000119,-3.55271368e-15 Z M32,-3.55271368e-15 L32,32 L-1.13686838e-13,32 L-1.13686838e-13,-3.55271368e-15 L32,-3.55271368e-15 Z M97.469329,6.80826869 C96.0294397,6.80826869 94.7294393,7.02226876 93.5693278,7.44982444 C92.4089942,7.87782457 91.4137717,8.49471364 90.5841047,9.30049166 C89.7538823,10.1067141 89.1188821,11.07327 88.6785486,12.199937 C88.2378818,13.3269373 88.0177706,14.5896043 88.0177706,15.9876048 C88.0177706,17.4188274 88.2296596,18.7062722 88.6531042,19.8493837 C89.0763265,20.9929396 89.6861045,21.9591621 90.482438,22.748829 C91.2784383,23.5383848 92.2522163,24.1430516 93.4042167,24.5624962 C94.5558837,24.9819408 95.8516619,25.1917186 97.2914401,25.1917186 C98.3752182,25.1917186 99.4086629,25.072163 100.391219,24.8338296 C101.37333,24.5956073 102.237108,24.2706072 102.982664,23.8592738 L102.982664,23.8592738 L102.982664,20.4292727 C101.40733,21.4001619 99.6881074,21.8851621 97.8251069,21.8851621 C96.6054399,21.8851621 95.567884,21.6549398 94.7126615,21.194273 C93.8572168,20.7338284 93.2049944,20.0633837 92.7564387,19.1831613 C92.3073275,18.3032721 92.0831052,17.2380496 92.0831052,15.9876048 C92.0831052,14.7377155 92.3156608,13.6766041 92.7816609,12.8044927 C93.2474389,11.9327147 93.916328,11.2664922 94.7888838,10.8058254 C95.6609951,10.3453809 96.715551,10.1148252 97.9521069,10.1148252 C98.8496628,10.1148252 99.7052186,10.2342697 100.518108,10.4726031 C101.331219,10.7112699 102.084664,11.0609366 102.779442,11.5212701 L102.779442,11.5212701 L102.779442,8.01738016 C102.017219,7.62260227 101.191441,7.32260218 100.302219,7.11671323 C99.4129963,6.91126872 98.4685515,6.80826869 97.469329,6.80826869 Z M55.7552388,7.00000208 L49.0000146,7.00000208 L49.0000146,25.0000021 L56.1713501,25.0000021 C57.590906,25.0000021 58.8063508,24.7903407 59.8181289,24.3706739 C60.8297959,23.9513405 61.6087961,23.3553403 62.1555741,22.5832289 C62.7020187,21.8114509 62.9754632,20.8882284 62.9754632,19.8140059 C62.9754632,18.7232278 62.6941298,17.7960053 62.1312407,17.0321162 C61.5681294,16.2686715 60.7563514,15.7104491 59.6957955,15.3580046 C60.4625736,14.9891156 61.0420182,14.4894488 61.4335738,13.8601152 C61.8252406,13.2307817 62.0210185,12.4881148 62.0210185,11.6321146 C62.0210185,10.1385586 61.4742405,8.99311379 60.3812402,8.19578022 C59.2877954,7.39889109 57.745795,7.00000208 55.7552388,7.00000208 L55.7552388,7.00000208 Z M15.7552269,7.00000208 L9.00000268,7.00000208 L9.00000268,25.0000021 L16.1713381,25.0000021 C17.5908941,25.0000021 18.8062278,24.7903407 19.8182281,24.3706739 C20.8296729,23.9513405 21.6087842,23.3553403 22.1555621,22.5832289 C22.7021179,21.8114509 22.9755624,20.8882284 22.9755624,19.8140059 C22.9755624,18.7232278 22.6941179,17.7960053 22.1311177,17.0321162 C21.5682286,16.2686715 20.7563395,15.7104491 19.6957836,15.3580046 C20.4625616,14.9891156 21.0418952,14.4894488 21.4335619,13.8601152 C21.8252287,13.2307817 22.0210066,12.4881148 22.0210066,11.6321146 C22.0210066,10.1385586 21.4741175,8.99311379 20.3811172,8.19578022 C19.2877835,7.39889109 17.7457831,7.00000208 15.7552269,7.00000208 L15.7552269,7.00000208 Z M55.8775833,17.2209385 C58.1128062,17.2209385 59.2308065,18.0434943 59.2308065,19.6881614 C59.2308065,20.4602728 58.9369175,21.0518285 58.3496951,21.4629397 C57.7622505,21.8743843 56.9216947,22.0797177 55.8286944,22.0797177 L55.8286944,22.0797177 L52.6469157,22.0797177 L52.6469157,17.2209385 Z M15.8775714,17.2209385 C18.1129054,17.2209385 19.2307946,18.0434943 19.2307946,19.6881614 C19.2307946,20.4602728 18.9370167,21.0518285 18.3496832,21.4629397 C17.7622386,21.8743843 16.9216828,22.0797177 15.8286825,22.0797177 L15.8286825,22.0797177 L12.6469038,22.0797177 L12.6469038,17.2209385 Z M55.412572,9.92028073 C57.3541282,9.92028073 58.3252396,10.6338365 58.3252396,12.0600591 C58.3252396,12.7988371 58.0763506,13.373504 57.5786838,13.7846152 C57.0807948,14.1960598 56.3587946,14.4013932 55.412572,14.4013932 L55.412572,14.4013932 L52.6469046,14.4013932 L52.6469046,9.92028073 Z M15.4125601,9.92028073 C17.3541163,9.92028073 18.3252277,10.6338365 18.3252277,12.0600591 C18.3252277,12.7988371 18.0762276,13.373504 17.5786719,13.7846152 C17.0807829,14.1960598 16.3587826,14.4013932 15.4125601,14.4013932 L15.4125601,14.4013932 L12.6468927,14.4013932 L12.6468927,9.92028073 Z"></path></svg>
 </span> -->
 
 						</div>
-						
+
 					</a></li>
-					<li class="nav-item sign-in">
-						<a class="nav-link" href="">Sign In</a></li>
-					<li class="nav-item"><a class="nav-link active" href="">Home</a></li>
-					<li class="nav-item"><a class="nav-link" href="">News</a></li>
-					<li class="nav-item"><a class="nav-link" href="">Sport</a></li>
-					<li class="nav-item"><a class="nav-link" href="">Reel</a></li>
-					<li class="nav-item"><a class="nav-link" href="">Worklife</a></li>
-					<li class="nav-item"><a class="nav-link" href="">Travel</a></li>
-					<li class="nav-item"><a class="nav-link" href="">Future</a></li>
-					<li class="nav-item"><a class="nav-link" href="">Culture</a></li>
-					
-					
-					
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="">More</a>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="">dropdown menu</a></li>
-							<li><a class="dropdown-item" href="">dropdown menu</a></li>
-							<li><a class="dropdown-item" href="">dropdown menu</a></li>
-							<li><a class="dropdown-item" href="">dropdown menu</a></li>
-							<li>
-								<hr class="dropdown-divder">
-							</li>
-							<li><a class="dropdown-item" href="">dropdown menu</a></li>
-							
-                       </ul>
-				   </li>
-					<li class="nav-item"><a class="nav-link" href="">Search BBC</a></li>
-					
-				</ul>
-             </div>
-          </nav>
+				<li class="nav-item sign-in">
+					<a class="nav-link" href="">Sign In</a>
+				</li>
+				<li class="nav-item"><a class="nav-link active" href="">Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="">News</a></li>
+				<li class="nav-item"><a class="nav-link" href="">Sport</a></li>
+				<li class="nav-item"><a class="nav-link" href="">Reel</a></li>
+				<li class="nav-item"><a class="nav-link" href="">Worklife</a></li>
+				<li class="nav-item"><a class="nav-link" href="">Travel</a></li>
+				<li class="nav-item"><a class="nav-link" href="">Future</a></li>
+				<li class="nav-item"><a class="nav-link" href="">Culture</a></li>
 
 
-		  <div class="add-section">
-			  <div class="container">
-				  <div class="cards">
-					  <div class="text">
-						  <h2>How do you manage</h2>
 
-					  </div>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+						href="">More</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="">dropdown menu</a></li>
+						<li><a class="dropdown-item" href="">dropdown menu</a></li>
+						<li><a class="dropdown-item" href="">dropdown menu</a></li>
+						<li><a class="dropdown-item" href="">dropdown menu</a></li>
+						<li>
+							<hr class="dropdown-divder">
+						</li>
+						<li><a class="dropdown-item" href="">dropdown menu</a></li>
 
-				  </div>
+					</ul>
+				</li>
+				<li class="nav-item"><a class="nav-link" href="">Search BBC</a></li>
 
-			  </div>
-
-		  </div>
-
-
-		 <div class="header">
-			 <div class="container">
-				 <div class="cards">
-					 <div class="text">
-						 <h3>Welcome to BBC.com</h3>
-						<h4>Tuesday, 10 May</h4>
-
-					 </div>
-
-				 </div>
-
-			 </div>
-
-		 </div>
+			</ul>
+		</div>
+	</nav>
 
 
-		 <div class="header-1">
-			 <div class="container">
-				 <div class="row">
-					 <div class="col-md-6">
-						 <div class="card bg-transparent">
-							<a href="https://www.bbc.com/news/world-europe-61402829" target="blank">
-								<img  class="card-img"src="https://ichef.bbci.co.uk/news/976/cpsprodpb/F9A3/production/_124670936_mediaitem124670935.jpg" alt="">
-								<div class="card-img-overlay text-white">
-									<div class="text">
-										<h2 class="card-title"> Putin is preparing for a long war in Ukraine...</h2>
-										<p>Moscow would only use nuclear weapons if Putin perceives an "existential threat" to Russia, US intelligence says, with even victory in the east potentially not ending the conflict, US intelligence has warned.</p>
-									</div>
-                              </div>
-						   </a>
-					   </div>
-                    </div>
+	<div class="add-section">
+		<div class="container">
+			<div class="cards">
+				<div class="text">
+					<h2>How do you manage</h2>
 
-					 <div class="col-md-3">
-						<div class="card bg-transparent">
-							<a href="https://www.bbc.com/news/world-europe-61396800" target="blank">
-								<img  class="card-img"src="https://ichef.bbci.co.uk/news/976/cpsprodpb/FC90/production/_124665646_21178fff-a411-4354-a6eb-1ae2c3b24782.jpg" alt="">
-								<div class="card-img-overlay text-white">
-									<div class="text">
-									<h5 class="card-title">Bodies of 44 civilians found as battle for</h5>
-									
-								</div>	
-                              </div>
-						   </a>
-					   </div>
-					   <div class="card bg-transparent sec-line">
-						<a href="https://www.bbc.com/news/world-asia-61389189" target="blank">
-							<img  class="card-img"src="https://ichef.bbci.co.uk/news/976/cpsprodpb/C306/production/_124662994_srilankacar.jpg" alt="">
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<div class="header">
+		<div class="container">
+			<div class="cards">
+				<div class="text">
+					<h3>Welcome to BBC.com</h3>
+					<h4>Tuesday, 10 May</h4>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<div class="header-1">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="card bg-transparent">
+						<a href="https://www.bbc.com/news/world-europe-61402829" target="blank">
+							<img class="card-img"
+								src="https://ichef.bbci.co.uk/news/976/cpsprodpb/F9A3/production/_124670936_mediaitem124670935.jpg"
+								alt="">
 							<div class="card-img-overlay text-white">
 								<div class="text">
-								<h5 class="card-title"> Sri Lankan troops ordered to open fire </h5>
-							</div>	
-						 </div>
-					  </a>
-				   </div>
+									<h2 class="card-title"> Putin is preparing for a long war in Ukraine...</h2>
+									<p>Moscow would only use nuclear weapons if Putin perceives an "existential threat"
+										to Russia, US intelligence says, with even victory in the east potentially not
+										ending the conflict, US intelligence has warned.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
 
-					 </div>
+				<div class="col-md-3">
+					<div class="card bg-transparent">
+						<a href="https://www.bbc.com/news/world-europe-61396800" target="blank">
+							<img class="card-img"
+								src="https://ichef.bbci.co.uk/news/976/cpsprodpb/FC90/production/_124665646_21178fff-a411-4354-a6eb-1ae2c3b24782.jpg"
+								alt="">
+							<div class="card-img-overlay text-white">
+								<div class="text">
+									<h5 class="card-title">Bodies of 44 civilians found as battle for</h5>
 
-					 <div class="col-md-3">
-						<div class="card bg-transparent">
-							<a href="https://www.bbc.com/sport/football/61303113" target="blank">
-								<img  class="card-img"src="https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/3BCB/production/_124670351_mediaitem124666194.jpg" alt="">
-								<div class="card-img-overlay text-white">
-									<div class="text">
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="card bg-transparent sec-line">
+						<a href="https://www.bbc.com/news/world-asia-61389189" target="blank">
+							<img class="card-img"
+								src="https://ichef.bbci.co.uk/news/976/cpsprodpb/C306/production/_124662994_srilankacar.jpg"
+								alt="">
+							<div class="card-img-overlay text-white">
+								<div class="text">
+									<h5 class="card-title"> Sri Lankan troops ordered to open fire </h5>
+								</div>
+							</div>
+						</a>
+					</div>
+
+				</div>
+
+				<div class="col-md-3">
+					<div class="card bg-transparent">
+						<a href="https://www.bbc.com/sport/football/61303113" target="blank">
+							<img class="card-img"
+								src="https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/3BCB/production/_124670351_mediaitem124666194.jpg"
+								alt="">
+							<div class="card-img-overlay text-white">
+								<div class="text">
 									<h5 class="card-title">
 										Liverpool maintained the pressure on Premier </h5>
-									
-								 </div>	
-                              </div>
-						   </a>
-						</div>
-						<div class="card bg-transparent sec-line">
-							<a href="https://www.bbc.com/news/live/world-europe-61404062" target="blank">
-								<img  class="card-img"src="https://ichef.bbci.co.uk/news/976/cpsprodpb/EC44/production/_124648406_putin_wave_epa_crop_hi075884573.jpg" alt="">
-								<div class="card-img-overlay text-white">
-									<div class="text">
+
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="card bg-transparent sec-line">
+						<a href="https://www.bbc.com/news/live/world-europe-61404062" target="blank">
+							<img class="card-img"
+								src="https://ichef.bbci.co.uk/news/976/cpsprodpb/EC44/production/_124648406_putin_wave_epa_crop_hi075884573.jpg"
+								alt="">
+							<div class="card-img-overlay text-white">
+								<div class="text">
 									<h5 class="card-title">
 										Russian forces pushed out north of Kharkiv </h5>
-								 </div>
-									
-							 </div>
-						   </a>
-						</div>
-
-					 </div>
-
-				 </div>
-
-			 </div>
-
-		 </div>
-
-
-		 <div class="news-section">
-			 <div class="container" id="news">
-				 <h3>News</h3>
-				 <div class="row">
-					 <div class="col-md-4">
-						 <div class="card">
-							 <a href="https://www.bbc.com/news/world/latin_america" target="blank">
-								 <img class="card-img" src="https://ichef.bbci.co.uk/news/976/cpsprodpb/E61B/production/_124670985_mediaitem124670984.jpg" alt="">
-								 <div class="card-body">
-									 <h5 class="card-title">Anti-mafia prosecutor killed 
-										</h5>
-									 <p class="card-text">A high-profile Paraguayan prosecutor who fought against organised crime in his home country has been shot dead during his honeymoon in Colombia.</p>
-									 <p class="text-muted">Last update 30 min ago</p>
-
-								 </div>
-
-							 </a>
-
-						 </div>
-						</div>
-						<div class="col-md-4">
-						 <div class="card">
-							<a href="https://www.bbc.com/news/world-middle-east-61403320" target="blank">
-								<img class="card-img" src="https://ichef.bbci.co.uk/news/976/cpsprodpb/C951/production/_124673515_mediaitem124673511.jpg" alt="">
-								<div class="card-body">
-									<h5 class="card-title">Al Jazeera reporter killed </h5>
-									<p class="card-text">Al Jazeera journalist Shereen Abu Aqleh has been shot dead while reporting on a raid by Israeli security forces in the occupied West Bank city </p>
-									<p class="text-muted">Last update 40 min ago</p>
-
 								</div>
 
-							</a>
-
-						</div>
+							</div>
+						</a>
 					</div>
-					<div class="col-md-4">
-						<div class="card">
-							<a href="https://www.bbc.com/news/world-us-canada-61401184" target="blank">
-								<img class="card-img" src="https://ichef.bbci.co.uk/news/976/cpsprodpb/BBBC/production/_124406084__124381573_lauderdale.png" alt="">
-								<div class="card-body">
-									<h5 class="card-title">Ex-prison guard Vicky White </h5>
-									<p class="card-text">A murder suspect and the female prison guard with whom he escaped planned to die in a shootout if they were captured, police in Indiana have said.</p>
-									<p class="text-muted">Last update 50 min ago</p>
 
-								</div>
+				</div>
 
-							</a>
+			</div>
 
-						</div>
+		</div>
+
+	</div>
+
+
+	<div class="news-section">
+		<div class="container" id="news">
+			<h3>News</h3>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card">
+						<a href="https://www.bbc.com/news/world/latin_america" target="blank">
+							<img class="card-img"
+								src="https://ichef.bbci.co.uk/news/976/cpsprodpb/E61B/production/_124670985_mediaitem124670984.jpg"
+								alt="">
+							<div class="card-body">
+								<h5 class="card-title">Anti-mafia prosecutor killed
+								</h5>
+								<p class="card-text">A high-profile Paraguayan prosecutor who fought against organised
+									crime in his home country has been shot dead during his honeymoon in Colombia.</p>
+								<p class="text-muted">Last update 30 min ago</p>
+
+							</div>
+
+						</a>
+
 					</div>
-                </div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<a href="https://www.bbc.com/news/world-middle-east-61403320" target="blank">
+							<img class="card-img"
+								src="https://ichef.bbci.co.uk/news/976/cpsprodpb/C951/production/_124673515_mediaitem124673511.jpg"
+								alt="">
+							<div class="card-body">
+								<h5 class="card-title">Al Jazeera reporter killed </h5>
+								<p class="card-text">Al Jazeera journalist Shereen Abu Aqleh has been shot dead while
+									reporting on a raid by Israeli security forces in the occupied West Bank city </p>
+								<p class="text-muted">Last update 40 min ago</p>
 
-			 </div>
+							</div>
 
-		 </div>
+						</a>
 
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<a href="https://www.bbc.com/news/world-us-canada-61401184" target="blank">
+							<img class="card-img"
+								src="https://ichef.bbci.co.uk/news/976/cpsprodpb/BBBC/production/_124406084__124381573_lauderdale.png"
+								alt="">
+							<div class="card-body">
+								<h5 class="card-title">Ex-prison guard Vicky White </h5>
+								<p class="card-text">A murder suspect and the female prison guard with whom he escaped
+									planned to die in a shootout if they were captured, police in Indiana have said.</p>
+								<p class="text-muted">Last update 50 min ago</p>
 
-		 <div class="sport-section">
-			<div class="container">
-				<h3>Sport</h3>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="card">
-							<a href="https://www.bbc.com/sport/tennis/61387779" target="blank">
-								<img class="card-img" src="https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/17198/production/_124661649_stakhovsky_k_getty.jpg" alt="">
-								<div class="card-body">
-									<h5 class="card-title">'If I see a Russian soldier, I know what I'm going to do' </h5>
-									<p class="card-text">
-										A month after playing at the Australian Open, Ukrainian Sergiy Stakhovsky dropped everything and left to fight for his country.
+							</div>
 
-TENNIS</p>
-									<p class="text-muted">TENNIS</p>
+						</a>
 
-								</div>
-
-							</a>
-
-						</div>
-					   </div>
-					   <div class="col-md-4">
-						<div class="card">
-							<a href="https://www.bbc.com/sport/football/61416829" target="blank">
-								<img class="card-img" src="https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/EB28/production/_124700206_gettyimages-1396735134.jpg" alt="">
-								<div class="card-body">
-									<h5 class="card-title">World Cup 2022: Ukraine prepare for Scotland play-off  </h5>
-									<p class="card-text">
-										Ukraine began preparations for their World Cup qualification play-off against Scotland with victory over Borussia ...</p>
-									<p class="text-muted">FOOTBALL</p>
-
-								</div>
-
-							</a>
-
-						</div>
-					   </div>
-					   <div class="col-md-4">
-						<div class="card">
-							<a href="https://www.bbc.com/sport/golf/61401351" target="blank">
-								<img class="card-img" src="https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/3A8A/production/_124668941_norman.jpg" alt="">
-								<div class="card-body">
-									<h5 class="card-title">Greg Norman: LIV Golf chief fields questions on Saudi</h5>
-									<p class="card-text">
-										
-Former world number one Greg Norman told reporters "we've all made mistakes" as he fielded questions on Saudi Arabia's human rights record</p>
-									<p class="text-muted">GOLF</p>
-
-								</div>
-
-							</a>
-
-						</div>
-					   </div>
 					</div>
 				</div>
 			</div>
 
-			
+		</div>
 
-			<div class="reel-section">
-				
-			   <div class="container">
-				   <div class="text">
-					   <h1>REEL</h1>
-					   <h4>Visit Reel</h4>
-					    <div><h5>The most amazing videos from the BBC</h5></div>
-				        
-				        </div>
-					    <div class="row">
-						   <div class="col-md-4">
-							<div class="card">
-								<a href="https://www.bbc.com/" target="_blank">
-									<img src="https://ychef.files.bbci.co.uk/432x243/p0c65x2s.jpg" alt="">
-									<div class="card-body">
-										<h5 class="card-title">How the rebirth of supersonic flight could change everything</h5>
-										
-									</div>
-								</a>
-								
+	</div>
+
+
+	<div class="sport-section">
+		<div class="container">
+			<h3>Sport</h3>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card">
+						<a href="https://www.bbc.com/sport/tennis/61387779" target="blank">
+							<img class="card-img"
+								src="https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/17198/production/_124661649_stakhovsky_k_getty.jpg"
+								alt="">
+							<div class="card-body">
+								<h5 class="card-title">'If I see a Russian soldier, I know what I'm going to do' </h5>
+								<p class="card-text">
+									A month after playing at the Australian Open, Ukrainian Sergiy Stakhovsky dropped
+									everything and left to fight for his country.
+
+									TENNIS</p>
+								<p class="text-muted">TENNIS</p>
+
 							</div>
 
-						    </div>
-						    <div class="col-md-4">
-							<div class="card">
-								<a href="https://www.bbc.com/" target="_blank">
-									<img src="https://ychef.files.bbci.co.uk/432x243/p0c5y2td.jpg" alt="">
-									<div class="card-body">
-										<h5 class="card-title">The surprising reason behind our ever-increasing narcissim</h5>
-										<p class="card-text"></p>
+						</a>
 
-									</div>
-								</a>
-								
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<a href="https://www.bbc.com/sport/football/61416829" target="blank">
+							<img class="card-img"
+								src="https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/EB28/production/_124700206_gettyimages-1396735134.jpg"
+								alt="">
+							<div class="card-body">
+								<h5 class="card-title">World Cup 2022: Ukraine prepare for Scotland play-off </h5>
+								<p class="card-text">
+									Ukraine began preparations for their World Cup qualification play-off against
+									Scotland with victory over Borussia ...</p>
+								<p class="text-muted">FOOTBALL</p>
+
 							</div>
 
-						    </div>
-						    <div class="col-md-4">
-							  <div class="card">
-								<a href="https://www.bbc.com/" target="_blank">
-									<img src="https://ychef.files.bbci.co.uk/432x243/p0c5wvtz.jpg" alt="">
-									<div class="card-body">
-										<h5 class="card-title">How one switch saved the us from a nuclear catastrophe</h5>
-										<p class="card-text"></p>
+						</a>
 
-									</div>
-								</a>
-								
-							 </div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<a href="https://www.bbc.com/sport/golf/61401351" target="blank">
+							<img class="card-img"
+								src="https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/3A8A/production/_124668941_norman.jpg"
+								alt="">
+							<div class="card-body">
+								<h5 class="card-title">Greg Norman: LIV Golf chief fields questions on Saudi</h5>
+								<p class="card-text">
 
-						    </div>
+									Former world number one Greg Norman told reporters "we've all made mistakes" as he
+									fielded questions on Saudi Arabia's human rights record</p>
+								<p class="text-muted">GOLF</p>
 
-				        </div>
+							</div>
+
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="reel-section">
+
+
+		<div class="container">
+			<div class="text">
+				<h1>REEL</h1>
+				<h4>Visit Reel</h4>
+				<div>
+					<h5>The most amazing videos from the BBC</h5>
+				</div>
+
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card">
+						<a href="https://www.bbc.com/" target="_blank">
+							<img src="https://ychef.files.bbci.co.uk/432x243/p0c65x2s.jpg" alt="">
+							<div class="card-body">
+								<h5 class="card-title">How the rebirth of supersonic flight could change everything</h5>
+
+							</div>
+						</a>
 
 					</div>
 
-				
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<a href="https://www.bbc.com/" target="_blank">
+							<img src="https://ychef.files.bbci.co.uk/432x243/p0c5y2td.jpg" alt="">
+							<div class="card-body">
+								<h5 class="card-title">The surprising reason behind our ever-increasing narcissim</h5>
+								<p class="card-text"></p>
 
-			</div>
-
-
-			<div class="Asia-News">
-				<div class="container">
-					<h4>Asia News</h4>
-					<div class="row">
-						<div class="col-md-3 mt-2">
-							<div class="card">
-								<a href="https://www.bbc.com/news/world-asia-india-61317075" target="_blank">
-									<img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/B2F9/production/_124671854_gettyimages-1235871192.jpg" alt="">
-									<div class="card-body">
-										<h5 class="card-title">What’s threatening India's online gaming industry</h5>
-										<p class="card-text">Months after Faisal Maqbool stopped playing online games on his smartphone, he still struggles with temptation.</p>
-										<p class="text-muted">INDIA</p>
-										
-									</div>
-								</a>
-								
 							</div>
+						</a>
 
-						 </div>
-						 <div class="col-md-3 mt-2">
-							<div class="card">
-								<a href="https://www.bbc.com/news/world-asia-61413335" target="_blank">
-									<img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/8169/production/_124692133_gettyimages-451576984.jpg" alt="">
-									<div class="card-body">
-										<h5 class="card-title">Hong Kong cardinal Joseph Zen arrested under China's </h5>
-										<p class="card-text">One of the Catholic Church's most senior members has been arrested in Hong Kong for breaking China's national security law, police have </p>
-										<p class="text-muted">ASIA</p>
-										
-									</div>
-								</a>
-								
+					</div>
+
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<a href="https://www.bbc.com/" target="_blank">
+							<img src="https://ychef.files.bbci.co.uk/432x243/p0c5wvtz.jpg" alt="">
+							<div class="card-body">
+								<h5 class="card-title">How one switch saved the us from a nuclear catastrophe</h5>
+								<p class="card-text"></p>
+
 							</div>
-
-						 </div>
-						 <div class="col-md-3 mt-2">
-							<div class="card">
-								<a href="https://www.bbc.com/news/world-asia-61408392" target="_blank">
-									<img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/13451/production/_124692987_toppled.jpg" alt="">
-									<div class="card-body">
-										<h5 class="card-title">Sri Lanka protests: Why rioters attacked a museum </h5>
-										<p class="card-text">It may pale in significance compared with the deaths and injuries during Sri Lanka's anti-government unrest, but the destruction </p>
-										<p class="text-muted">ASIA</p>
-										
-									</div>
-								</a>
-								
-							</div>
-
-						 </div>
-						 <div class="col-md-3 mt-2">
-							<div class="card">
-								<a href="https://www.bbc.com/news/world-asia-61354625" target="_blank">
-									<img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/DB19/production/_124698065_1200-dsc02370.jpg" alt="">
-									<div class="card-body">
-										<h5 class="card-title">The long struggle to return Cambodia's looted </h5>
-										<p class="card-text">Cambodia is calling on the UK government to help it recover antiquities it says were stolen from its temples.</p>
-										<p class="text-muted">CHINA</p>
-										
-									</div>
-								</a>
-								
-							</div>
-
-						 </div>
-
-
-
+						</a>
 
 					</div>
 
@@ -422,52 +383,221 @@ Former world number one Greg Norman told reporters "we've all made mistakes" as 
 
 			</div>
 
-
-			<div class="Editor-section">
-				<div class="container">
-					<h3>Editor’s Picks</h3>
-					<div class="row">
-						<div class="col-md-9">
-							<div class="card bg-transparent">
-							<a href="https://www.bbc.com/culture/article/20220511-how-nature-and-extreme-wilding-can-re-boot-our-minds" target="blank">
-								<img  class="card-img"src="https://ychef.files.bbci.co.uk/1600x900/p0c645yw.webp" alt="">
-								<div class="card-img-overlay text-white">
-									<div class="text">
-										<h2 class="card-title"> How nature and 'extreme wilding' can re-boot our minds</h2>
-										<p>Is it possible to 're-wild' ourselves, and find peace by living a slower, more rural existence in harmony with nature?</p>
-									   </div>
-                                    </div>
-						       </a>
-					        </div>
-
-						</div>
-						
-					</div>
-
-				</div>
-
-			</div>
+		</div>
 
 
-			<div class="">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-3">
-							
-							<div class="card">
-								<a href="https://www.bbc.com/news/world-asia-61413335" target="_blank">
-									<img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/8169/production/_124692133_gettyimages-451576984.jpg" alt="">
-									<div class="card-body">
-										<h5 class="card-title">Hong Kong cardinal Joseph Zen arrested under China's </h5>
-										<p class="card-text">One of the Catholic Church's most senior members has been arrested in Hong Kong for breaking China's national security law, police have </p>
-										<p class="text-muted">ASIA</p>
-										
-									</div>
-								</a>
-								
+
+	</div>
+
+
+	<div class="Asia-News">
+		<div class="container">
+			<h4>Asia News</h4>
+			<div class="row">
+				<div class="col-md-3 mt-2">
+					<div class="card">
+						<a href="https://www.bbc.com/news/world-asia-india-61317075" target="_blank">
+							<img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/B2F9/production/_124671854_gettyimages-1235871192.jpg"
+								alt="">
+							<div class="card-body">
+								<h5 class="card-title">What’s threatening India's online gaming industry</h5>
+								<p class="card-text">Months after Faisal Maqbool stopped playing online games on his
+									smartphone, he still struggles with temptation.</p>
+								<p class="text-muted">INDIA</p>
+
 							</div>
+						</a>
 
-						</div>
+					</div>
+
+				</div>
+				<div class="col-md-3 mt-2">
+					<div class="card">
+						<a href="https://www.bbc.com/news/world-asia-61413335" target="_blank">
+							<img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/8169/production/_124692133_gettyimages-451576984.jpg"
+								alt="">
+							<div class="card-body">
+								<h5 class="card-title">Hong Kong cardinal Joseph Zen arrested under China's </h5>
+								<p class="card-text">One of the Catholic Church's most senior members has been arrested
+									in Hong Kong for breaking China's national security law, police have </p>
+								<p class="text-muted">ASIA</p>
+
+							</div>
+						</a>
+
+					</div>
+
+				</div>
+				<div class="col-md-3 mt-2">
+					<div class="card">
+						<a href="https://www.bbc.com/news/world-asia-61408392" target="_blank">
+							<img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/13451/production/_124692987_toppled.jpg"
+								alt="">
+							<div class="card-body">
+								<h5 class="card-title">Sri Lanka protests: Why rioters attacked a museum </h5>
+								<p class="card-text">It may pale in significance compared with the deaths and injuries
+									during Sri Lanka's anti-government unrest, but the destruction </p>
+								<p class="text-muted">ASIA</p>
+
+							</div>
+						</a>
+
+					</div>
+
+				</div>
+				<div class="col-md-3 mt-2">
+					<div class="card">
+						<a href="https://www.bbc.com/news/world-asia-61354625" target="_blank">
+							<img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/DB19/production/_124698065_1200-dsc02370.jpg"
+								alt="">
+							<div class="card-body">
+								<h5 class="card-title">The long struggle to return Cambodia's looted </h5>
+								<p class="card-text">Cambodia is calling on the UK government to help it recover
+									antiquities it says were stolen from its temples.</p>
+								<p class="text-muted">CHINA</p>
+
+							</div>
+						</a>
+
+					</div>
+
+				</div>
+
+
+
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<div class="Editor-section">
+		<div class="container">
+			<h3>Editor’s Picks</h3>
+			<div class="row">
+				<div class="col-md-9">
+					<div class="card bg-transparent">
+						<a href="https://www.bbc.com/culture/article/20220511-how-nature-and-extreme-wilding-can-re-boot-our-minds"
+							target="blank">
+							<img class="card-img" src="https://ychef.files.bbci.co.uk/1600x900/p0c645yw.webp" alt="">
+							<div class="card-img-overlay text-white">
+								<div class="text">
+									<h2 class="card-title"> How nature and 'extreme wilding' can re-boot our minds</h2>
+									<p>Is it possible to 're-wild' ourselves, and find peace by living a slower, more
+										rural existence in harmony with nature?</p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="row mt-3">
+				<div class="col-md-3">
+					<div class="card">
+						<a href="https://www.bbc.com/worklife/article/20220506-the-toxic-cut-throat-culture-that-drives-out-workers"
+							target="_blank">
+							<img src="https://ychef.files.bbci.co.uk/1600x900/p0c57gq5.webp" alt="">
+							<div class="card-body">
+								<h5 class="card-title">The toxic 'cut-throat' culture that drives out </h5>
+								<p class="card-text">Many employees thrive in high-pressure work environments.
+								</p>
+								<p class="text-muted">WORKLIFE</p>
+
+							</div>
+						</a>
+
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="card">
+						<a href="https://www.bbc.com/future/article/20220512-the-chemicals-that-linger-for-decades-in-your-blood"
+							target="_blank">
+							<img src="https://ychef.files.bbci.co.uk/1600x900/p0c6cv8g.webp" alt="">
+							<div class="card-body">
+								<h5 class="card-title">The chemicals that linger for decades in your blood</h5>
+								<p class="card-text">Environmental journalist Anna Turns experienced a wake-up call </p>
+								<p class="text-muted">FUTURE</p>
+
+							</div>
+						</a>
+
+					</div>
+
+				</div>
+
+				<div class="col-md-3 ">
+					<div class="card">
+						<a href="https://www.bbc.com/culture/article/20220512-top-gun-maverick-hits-its-target-with-explosive-force"
+							target="_blank">
+							<img src="https://ychef.files.bbci.co.uk/1600x900/p0c6cv8x.webp" alt="">
+							<div class="card-body">
+								<h5 class="card-title">Top Gun: Maverick: 'Hits its target with explosive force'</h5>
+								<p class="card-text">With a smarter story, funnier dialogue and more nausea </p>
+								<p class="text-muted">CULTURE</p>
+
+							</div>
+						</a>
+
+					</div>
+
+				</div>
+			</div>
+
+			<div class="row mt-3">
+				<div class="col-md-3">
+					<div class="card">
+						<a href="https://www.bbc.com/news/science-environment-61434295" target="_blank">
+							<img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/483B/production/_124719481_moonsoiltwo.jpg"
+								alt="">
+							<div class="card-body">
+								<h5 class="card-title">Moon soil used to grow plants for first time in </h5>
+								<p class="card-text">Scientists have grown plants in lunar soil for the first time,
+									an important step towards making </p>
+								<p class="text-muted"></p>
+
+							</div>
+						</a>
+
+					</div>
+
+				</div>
+
+				<div class="col-md-3">
+					<div class="card">
+						<a href="https://www.bbc.com/news/entertainment-arts-61332202" target="_blank">
+							<img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/17D61/production/_124633679_gettyimages-1198079409.jpg"
+								alt="">
+							<div class="card-body">
+								<h5 class="card-title">Author Benjamin Myers on the crop-circle </h5>
+								<p class="card-text">Mysterious patterns in crop fields caused a sensation in the
+									late 1980s, blamed on aliens or </p>
+								<p class="text-muted"></p>
+
+							</div>
+						</a>
+
+					</div>
+
+				</div>
+
+				<div class="col-md-3">
+					<div class="card">
+						<a href="https://www.bbc.com/news/uk-61428970" target="_blank">
+							<img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/06E1/production/_124716710_de07.jpg"
+								alt="">
+							<div class="card-body">
+								<h5 class="card-title">Platinum Jubilee: Lemon and amaretti trifle to be</h5>
+								<p class="card-text">A lemon and Swiss roll amaretti trifle is to be the official
+									pudding for the Queen's Platinum Jubilee </p>
+								<p class="text-muted"></p>
+
+							</div>
+						</a>
 
 					</div>
 
@@ -475,11 +605,53 @@ Former world number one Greg Norman told reporters "we've all made mistakes" as 
 
 			</div>
 
-			
+		</div>
+
+	</div>
+
+	</div>
+
+
+	<div class="#">
+		<div class="container">
+			<h3></h3>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="card">
+						<a href="" target="_blank">
+							<img src="" alt="">
+							<div class="card-body">
+								<h5 class="card-title"></h5>
+								<p class="card-text"></p>
+								<p class="text-muted">ASIA</p>
+
+							</div>
+						</a>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
 
 
 
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
 </body>
+
 </html>

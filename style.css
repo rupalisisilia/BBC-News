@@ -247,6 +247,7 @@ li.nav-item {
 .reel-section{
     height: 480px;
     background:url(images/reel-back.jpg);
+    overflow: hidden;
 }
 
 .reel-section .text h1{
@@ -268,11 +269,20 @@ li.nav-item {
     color: #fff;
     text-align: left !important;
     padding-top: 20px;
+    overflow: hidden;
 }
 .Asia-News .text h4{
     padding-top: 30px ;
+    overflow: hidden;
 }
 .Editor-section{
-    height: 1200px;
-    background-color: antiquewhite;
+    height: 1290px;
+    background-color: #f6f6f6;
+    overflow: hidden;
+}
+.Editor-section .card-body{
+    padding-top: 20px;
+}
+.Asia-News .card{
+    border: none !important;
 }
