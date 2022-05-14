@@ -232,7 +232,7 @@ li.nav-item {
 	bottom: 0;
 }
   
-  .card-img-overlay::before {
+.card-img-overlay::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -257,6 +257,7 @@ li.nav-item {
 .reel-section{
     height: 480px;
     background:url(images/reel-back.jpg);
+    background-size: cover;
     overflow: hidden;
 }
 .reel-section .card{
@@ -275,10 +276,10 @@ li.nav-item {
  .button-reel{
     background-color: rgb(83, 81, 81);
     color: #fff;
-    padding: 5px 25px;
-    border: 1px solid white;
+    padding: 5px 30px;
+    border: 2px solid white;
     border-radius: 30px ;
-    margin-left: 80%;
+    margin-left: 70%;
 	margin-top: 6%;
 	
 }
@@ -314,3 +315,39 @@ li.nav-item {
 .Asia-News .card{
     border: none !important;
 }
+.Future-section{
+    height: 480px;
+    background:url(images/future-planet-back.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+.Future-section .card{
+    border: none !important;
+
+}
+.button-future{
+    background-color: rgb(83, 81, 81);
+    color: #fff;
+    padding: 7px 20px;
+    border: 2px solid green;
+    margin-top: 6%;
+	   
+}
+.button-planet{
+    background-color: rgb(83, 81, 81);
+    color: #fff;
+    padding: 5px 20px;
+    border: 2px solid white;
+    border-radius: 30px ;
+    margin-left: 70%;
+	margin-top: 6%;
+	     
+}
+.Future-section .text h5{
+    color: #fff;
+    text-align: left;
+    overflow: hidden;
+
+}
+
+
