@@ -219,7 +219,7 @@ li.nav-item {
 	overflow: hidden;
 	
 }
-.news-section .card  .text{
+.news-section .card{
     border: none !important;
 	
 	
@@ -244,10 +244,24 @@ li.nav-item {
 .sec-line{
 	margin-top: 12px;
 }
+.sport-section{
+    overflow: hidden;
+}
+.sport-section .card{
+    border: none !important;
+
+}
+.sport-section h3{
+    padding-top: 20px;
+}
 .reel-section{
     height: 480px;
     background:url(images/reel-back.jpg);
     overflow: hidden;
+}
+.reel-section .card{
+    border: none !important;
+
 }
 
 .reel-section .text h1{
@@ -255,33 +269,47 @@ li.nav-item {
     padding-top: 20px ;
 	font-size: 40px;
 	text-align: left;
-	float: left;
+	
 	overflow: hidden;
 }
-.reel-section .text h4{
+ .button-reel{
+    background-color: rgb(83, 81, 81);
     color: #fff;
-    font-size: 22px;
-    text-align: end ;
-	padding-top: 30px;
-	overflow: hidden;
+    padding: 5px 25px;
+    border: 1px solid white;
+    border-radius: 30px ;
+    margin-left: 80%;
+	margin-top: 6%;
+	
 }
 .reel-section .text h5{
     color: #fff;
-    text-align: left !important;
-    padding-top: 20px;
+    text-align: left;
     overflow: hidden;
 }
-.Asia-News .text h4{
-    padding-top: 30px ;
+.Asia-News{
     overflow: hidden;
+}
+.Asia-News .card{
+    border: none !important;
+    
+}
+.Asia-News h4{
+    padding-top: 30px ;
+    
 }
 .Editor-section{
-    height: 1290px;
+    height: 1450px;
     background-color: #f6f6f6;
     overflow: hidden;
 }
-.Editor-section .card-body{
+.Editor-section .card{
+    border: none !important;
     padding-top: 20px;
+}
+.Editor-section h3{
+    padding-top: 20px;
+
 }
 .Asia-News .card{
     border: none !important;
