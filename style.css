@@ -265,6 +265,7 @@ li.nav-item {
 
 }
 
+
 .reel-section .text h1{
     color: #fff;
     padding-top: 20px ;
@@ -310,6 +311,28 @@ li.nav-item {
 }
 .Editor-section h3{
     padding-top: 20px;
+
+}
+.latest-news{
+    background-color: rgb(243, 8, 8);
+    color: white;
+    padding: 10px 0 5px 20px;
+    margin-top: 6%;
+}
+.text-black{
+    background-color: #000;
+   
+}
+.text-black h5{
+    color: white;
+    padding: 30px;
+    font-size: 20px;
+
+}
+.text-black h4{
+    background-color: red;
+    color: white;
+    padding: 30px;
 
 }
 .Asia-News .card{
