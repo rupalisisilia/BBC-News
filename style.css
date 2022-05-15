@@ -325,14 +325,16 @@ li.nav-item {
 }
 .text-black h5{
     color: white;
-    padding: 30px;
+    
+    padding: 30px 0 30px 0px;
     font-size: 20px;
 
 }
 .text-black h4{
+   
     background-color: red;
     color: white;
-    padding: 30px;
+    padding: 30px 5px 30px 5px;
 
 }
 .Asia-News .card{
@@ -353,7 +355,7 @@ li.nav-item {
     color: #fff;
     padding: 7px 20px;
     border: 2px solid green;
-    margin-top: 6%;
+    margin-top: 5%;
 	   
 }
 .button-planet{
@@ -370,7 +372,17 @@ li.nav-item {
     color: #fff;
     text-align: left;
     overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
+}.Technology-section .text h4{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.Technology-section .text h5{
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 
