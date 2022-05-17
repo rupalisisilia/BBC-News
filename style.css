@@ -203,7 +203,7 @@ li.nav-item {
 }
 .add-section .text{
 	text-align: center;
-	padding-top: 25px;
+	padding-top: 35px;
 }
 .header .text h3{
 	padding-top: 30px ;
@@ -320,22 +320,37 @@ li.nav-item {
     margin-top: 5%;
 }
 .text-black{
-    background-color: #000;
-   
+    background-color: #000;   
+}
+.text-black .number{
+    width: 25%;
+    margin: auto; 
+    text-align: center;
+}
+.text-black .number h4{
+    background-color: red;
+    font-style: italic;
+    color: white;
+    padding: 8px;
+    margin-left: 30px;
+    margin-right: 6px;;
+    border-radius: 50%;
+}
+.text-black .text{
+    width: 75%;
+    padding: 0 10px;
 }
 .text-black h5{
     color: white;
     
     padding: 30px 0 30px 0px;
     font-size: 20px;
-
 }
-.text-black h4{
-    margin-left: 4% !important;
-    background-color: red;
-    color: white;
-    padding: 30px 5px 30px 10px;
-
+.ad {
+    background-color: lightgray;
+    text-align: center;
+    margin: 20px 0;
+    overflow: hidden;
 }
 .Asia-News .card{
     border: none !important;
@@ -405,6 +420,15 @@ li.nav-item {
     margin-bottom: 30px;
     padding: 10px 0 10px 15px;
     
+}
+.red-line{
+    background-color: red;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 0 10px 15px;
+}
+.More around the BBC{
+
 }
 
 
