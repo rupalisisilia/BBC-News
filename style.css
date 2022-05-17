@@ -393,15 +393,18 @@ li.nav-item {
     color: #fff;
     margin-top:30px;
     margin-bottom: 30px;
+    padding: 10px 0 10px 15px;
+}
     
 
-}
+
 .service-section .text h6{
     background-color: #000;
     color: #fff;
+    margin-top:30px;
+    margin-bottom: 30px;
+    padding: 10px 0 10px 15px;
     
-   
-   
 }
 
 
