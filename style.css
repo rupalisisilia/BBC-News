@@ -403,17 +403,21 @@ li.nav-item {
     border: none !important;
 }
 .service-section .text h5{
+    width: 15%;
     font-size: 15px;
     background-color: red;
     color: #fff;
     margin-top:30px;
     margin-bottom: 30px;
     padding: 10px 0 10px 15px;
+    float: left;
+    overflow: hidden;
 }
     
 
 
 .service-section .text h6{
+    width: 85%;
     background-color: #000;
     color: #fff;
     margin-top:30px;
@@ -427,8 +431,20 @@ li.nav-item {
     font-size: 15px;
     padding: 10px 0 10px 15px;
 }
-.More around the BBC{
+.around-section{
+    height: 1450px;
+    background-color: #f6f6f6;
+    overflow: hidden;
 
+}
+.around-section h4{
+    font-size: 25px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.around-section .photo{
+    background-color: #000;
+    color: #fff;
 }
 
 
