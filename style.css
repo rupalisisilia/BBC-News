@@ -442,9 +442,19 @@ li.nav-item {
     padding-top: 30px;
     padding-bottom: 10px;
 }
+.around-section h5{
+    padding: 10px 10px 10px 0;
+}
 .around-section .photo{
     background-color: #000;
     color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: auto;
+}
+.around-section h6{
+    font-style: italic;
+    font-size: 13px;
 }
 
 
