@@ -487,6 +487,32 @@ li.nav-item {
     padding-bottom: 30px;
     margin: auto;
 }
+.Technology-section-1{
+    height: 412px;
+    overflow: hidden;
+}
+.World-pictures{
+    height: 900px;
+    background-color: #f6f6f6;
+    overflow: hidden;
+   
+}
+.World-pictures .card{
+    border: none !important;
+}
+.World-pictures h4{
+    font-size: 25px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+}
+.World-pictures .yollow{
+    height: 230px;
+}
+.World-pictures p{
+    font-size: 13px;
+    padding-top: 17px;
+}
 
 
 
