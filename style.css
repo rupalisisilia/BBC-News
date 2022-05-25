@@ -226,6 +226,7 @@ li.nav-item {
 }
 .news-section h3{
 	padding-top: 20px;
+    border-left: 5px red !important;
 }
 .card-img-overlay .text{
 	position: absolute;
@@ -492,7 +493,7 @@ li.nav-item {
     overflow: hidden;
 }
 .World-pictures{
-    height: 900px;
+    height: 920px;
     background-color: #f6f6f6;
     overflow: hidden;
    
@@ -512,6 +513,23 @@ li.nav-item {
 .World-pictures p{
     font-size: 13px;
     padding-top: 17px;
+}
+.BBC-LANGUAGES{
+    height: 350px;
+    background-color: #e2dada67;
+    overflow: hidden;
+}
+.BBC-LANGUAGES h3{
+    font-size: 24px;
+    padding-top: 35px;
+    padding-bottom: 10px;
+
+}
+.BBC-LANGUAGES h5{
+    font-size: 18px;
+}
+.BBC-LANGUAGES h6{
+    font-size: 13px;
 }
 
 
