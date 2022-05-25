@@ -515,7 +515,7 @@ li.nav-item {
     padding-top: 17px;
 }
 .BBC-LANGUAGES{
-    height: 350px;
+    height: 400px;
     background-color: #e2dada67;
     overflow: hidden;
 }
@@ -530,6 +530,25 @@ li.nav-item {
 }
 .BBC-LANGUAGES h6{
     font-size: 13px;
+}
+.BBC-LANGUAGES ul li{
+    font-size: 14px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+.Explore-BBC{
+    height: 300px;
+    background-color: rgb(90, 88, 88);
+    color: #fff;
+}
+.Explore-BBC h4{
+    font-size: 22px;
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+.Explore-BBC h6{
+    padding-bottom: 8px;
+    border-right: 1px solid white;
 }
 
 
