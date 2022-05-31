@@ -566,5 +566,23 @@ li.nav-item {
     font-size: 13px;
 }
 
+@media (max-width: 340px) {
+    
+    .navbar{
+        background-color: red !important;
+    }
+}
+
+@media (max-width: 700px) {
+      
+    .navbar{
+        background-color: green !important;
+    }
+}
+
+@media (max-width: 1200px) {
+        
+    
+}
 
 
